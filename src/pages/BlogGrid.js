@@ -14,6 +14,7 @@ import "../css/style.css"
 import "../css/custom-animate.css"
 import "../css/jquery.fancybox.min.css"
 import "../css/colors/color-default.css"
+import card from "../images/resource/news-1.jpg"
 function BlogGrid() {
   return (
     <>
@@ -33,13 +34,13 @@ function BlogGrid() {
             <div className="logo">
               <a
                 href="index.html"
-                title="Linoor - DIgital Agency HTML Template"
+                title="Linoor"
               >
                 <img
                   src="images/logo.png"
                   id="thm-logo"
-                  alt="Linoor - DIgital Agency HTML Template"
-                  title="Linoor - DIgital Agency HTML Template"
+                  alt="Linoor"
+                  title="Linoor"
                 />
               </a>
             </div>
@@ -294,581 +295,58 @@ function BlogGrid() {
       <div className="auto-container">
         <div className="row clearfix">
           {/*News Block*/}
-          <div
-            className="news-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp"
-            data-wow-delay="0ms"
-            data-wow-duration="1500ms"
-          >
-            <div className="inner-box">
-              <div className="image-box">
-                <a href="blog-single.html">
-                  <img src="images/resource/news-1.jpg" alt="" />
-                </a>
-              </div>
-              <div className="lower-box">
-                <div className="post-meta">
-                  <ul className="clearfix text-dark">
-                    <li>
-                      <a href="">
-                        <span className="far fa-clock" /> 20 Mar
+         {[1,2,3,4,5,6].map(val=>{
+            return (
+                <div
+                className="news-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp"
+                data-wow-delay="0ms"
+                data-wow-duration="1500ms"
+              >
+                <div className="inner-box">
+                  <div className="image-box">
+                    <a href="blog-single.html">
+                      <img src={card} alt="" />
+                    </a>
+                  </div>
+                  <div className="lower-box">
+                    <div className="post-meta">
+                      <ul className="clearfix text-dark">
+                        <li>
+                          <a href="">
+                            <span className="far fa-clock" /> 20 Mar
+                          </a>
+                        </li>
+                        <li>
+                          <a href="">
+                            <span className="far fa-user-circle" /> Author
+                          </a>
+                        </li>
+                        <li>
+                          <a href="">
+                            <span className="fa fa-list" /> Sports
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                    <span className="blog_heading">
+                      <a href="blog-single.html">
+                        basic rules of running web agency business
                       </a>
-                    </li>
-                    <li>
-                      <a href="">
-                        <span className="far fa-user-circle" /> Author
+                    </span>
+                    <div className="text">
+                      Lorem ipsum is simply free text used by copytyping refreshing.
+                    </div>
+                    <div className="link-box">
+                      <a className="theme-btn" href="blog-single.html">
+                        <span className="flaticon-next-1" />
                       </a>
-                    </li>
-                    <li>
-                      <a href="">
-                        <span className="fa fa-list" /> Sports
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-                <span className="blog_heading">
-                  <a href="blog-single.html">
-                    basic rules of running web agency business
-                  </a>
-                </span>
-                <div className="text">
-                  Lorem ipsum is simply free text used by copytyping refreshing.
-                </div>
-                <div className="link-box">
-                  <a className="theme-btn" href="blog-single.html">
-                    <span className="flaticon-next-1" />
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          {/*News Block*/}
-          <div
-            className="news-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp"
-            data-wow-delay="0ms"
-            data-wow-duration="1500ms"
-          >
-            <div className="inner-box">
-              <div className="image-box">
-                <a href="blog-single.html">
-                  <img src="images/resource/news-1.jpg" alt="" />
-                </a>
-              </div>
-              <div className="lower-box">
-                <div className="post-meta">
-                  <ul className="clearfix text-dark">
-                    <li>
-                      <a href="">
-                        <span className="far fa-clock" /> 20 Mar
-                      </a>
-                    </li>
-                    <li>
-                      <a href="">
-                        <span className="far fa-user-circle" /> Author
-                      </a>
-                    </li>
-                    <li>
-                      <a href="">
-                        <span className="fa fa-list" /> Sports
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-                <span className="blog_heading">
-                  <a href="blog-single.html">
-                    basic rules of running web agency business
-                  </a>
-                </span>
-                <div className="text">
-                  Lorem ipsum is simply free text used by copytyping refreshing.
-                </div>
-                <div className="link-box">
-                  <a className="theme-btn" href="blog-single.html">
-                    <span className="flaticon-next-1" />
-                  </a>
+                    </div>
+                  </div>
                 </div>
               </div>
-            </div>
-          </div>
-          {/*News Block*/}
-          <div
-            className="news-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp"
-            data-wow-delay="0ms"
-            data-wow-duration="1500ms"
-          >
-            <div className="inner-box">
-              <div className="image-box">
-                <a href="blog-single.html">
-                  <img src="images/resource/news-1.jpg" alt="" />
-                </a>
-              </div>
-              <div className="lower-box">
-                <div className="post-meta">
-                  <ul className="clearfix text-dark">
-                    <li>
-                      <a href="">
-                        <span className="far fa-clock" /> 20 Mar
-                      </a>
-                    </li>
-                    <li>
-                      <a href="">
-                        <span className="far fa-user-circle" /> Author
-                      </a>
-                    </li>
-                    <li>
-                      <a href="">
-                        <span className="fa fa-list" /> Sports
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-                <span className="blog_heading">
-                  <a href="blog-single.html">
-                    basic rules of running web agency business
-                  </a>
-                </span>
-                <div className="text">
-                  Lorem ipsum is simply free text used by copytyping refreshing.
-                </div>
-                <div className="link-box">
-                  <a className="theme-btn" href="blog-single.html">
-                    <span className="flaticon-next-1" />
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          {/*News Block*/}
-          <div
-            className="news-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp"
-            data-wow-delay="0ms"
-            data-wow-duration="1500ms"
-          >
-            <div className="inner-box">
-              <div className="image-box">
-                <a href="blog-single.html">
-                  <img src="images/resource/news-1.jpg" alt="" />
-                </a>
-              </div>
-              <div className="lower-box">
-                <div className="post-meta">
-                  <ul className="clearfix text-dark">
-                    <li>
-                      <a href="">
-                        <span className="far fa-clock" /> 20 Mar
-                      </a>
-                    </li>
-                    <li>
-                      <a href="">
-                        <span className="far fa-user-circle" /> Author
-                      </a>
-                    </li>
-                    <li>
-                      <a href="">
-                        <span className="fa fa-list" /> Sports
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-                <span className="blog_heading">
-                  <a href="blog-single.html">
-                    basic rules of running web agency business
-                  </a>
-                </span>
-                <div className="text">
-                  Lorem ipsum is simply free text used by copytyping refreshing.
-                </div>
-                <div className="link-box">
-                  <a className="theme-btn" href="blog-single.html">
-                    <span className="flaticon-next-1" />
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          {/*News Block*/}
-          <div
-            className="news-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp"
-            data-wow-delay="0ms"
-            data-wow-duration="1500ms"
-          >
-            <div className="inner-box">
-              <div className="image-box">
-                <a href="blog-single.html">
-                  <img src="images/resource/news-1.jpg" alt="" />
-                </a>
-              </div>
-              <div className="lower-box">
-                <div className="post-meta">
-                  <ul className="clearfix text-dark">
-                    <li>
-                      <a href="">
-                        <span className="far fa-clock" /> 20 Mar
-                      </a>
-                    </li>
-                    <li>
-                      <a href="">
-                        <span className="far fa-user-circle" /> Author
-                      </a>
-                    </li>
-                    <li>
-                      <a href="">
-                        <span className="fa fa-list" /> Sports
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-                <span className="blog_heading">
-                  <a href="blog-single.html">
-                    basic rules of running web agency business
-                  </a>
-                </span>
-                <div className="text">
-                  Lorem ipsum is simply free text used by copytyping refreshing.
-                </div>
-                <div className="link-box">
-                  <a className="theme-btn" href="blog-single.html">
-                    <span className="flaticon-next-1" />
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          {/*News Block*/}
-          <div
-            className="news-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp"
-            data-wow-delay="0ms"
-            data-wow-duration="1500ms"
-          >
-            <div className="inner-box">
-              <div className="image-box">
-                <a href="blog-single.html">
-                  <img src="images/resource/news-1.jpg" alt="" />
-                </a>
-              </div>
-              <div className="lower-box">
-                <div className="post-meta">
-                  <ul className="clearfix text-dark">
-                    <li>
-                      <a href="">
-                        <span className="far fa-clock" /> 20 Mar
-                      </a>
-                    </li>
-                    <li>
-                      <a href="">
-                        <span className="far fa-user-circle" /> Author
-                      </a>
-                    </li>
-                    <li>
-                      <a href="">
-                        <span className="fa fa-list" /> Sports
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-                <span className="blog_heading">
-                  <a href="blog-single.html">
-                    basic rules of running web agency business
-                  </a>
-                </span>
-                <div className="text">
-                  Lorem ipsum is simply free text used by copytyping refreshing.
-                </div>
-                <div className="link-box">
-                  <a className="theme-btn" href="blog-single.html">
-                    <span className="flaticon-next-1" />
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          {/*News Block*/}
-          <div
-            className="news-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp"
-            data-wow-delay="0ms"
-            data-wow-duration="1500ms"
-          >
-            <div className="inner-box">
-              <div className="image-box">
-                <a href="blog-single.html">
-                  <img src="images/resource/news-1.jpg" alt="" />
-                </a>
-              </div>
-              <div className="lower-box">
-                <div className="post-meta">
-                  <ul className="clearfix text-dark">
-                    <li>
-                      <a href="">
-                        <span className="far fa-clock" /> 20 Mar
-                      </a>
-                    </li>
-                    <li>
-                      <a href="">
-                        <span className="far fa-user-circle" /> Author
-                      </a>
-                    </li>
-                    <li>
-                      <a href="">
-                        <span className="fa fa-list" /> Sports
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-                <span className="blog_heading">
-                  <a href="blog-single.html">
-                    basic rules of running web agency business
-                  </a>
-                </span>
-                <div className="text">
-                  Lorem ipsum is simply free text used by copytyping refreshing.
-                </div>
-                <div className="link-box">
-                  <a className="theme-btn" href="blog-single.html">
-                    <span className="flaticon-next-1" />
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          {/*News Block*/}
-          <div
-            className="news-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp"
-            data-wow-delay="0ms"
-            data-wow-duration="1500ms"
-          >
-            <div className="inner-box">
-              <div className="image-box">
-                <a href="blog-single.html">
-                  <img src="images/resource/news-1.jpg" alt="" />
-                </a>
-              </div>
-              <div className="lower-box">
-                <div className="post-meta">
-                  <ul className="clearfix text-dark">
-                    <li>
-                      <a href="">
-                        <span className="far fa-clock" /> 20 Mar
-                      </a>
-                    </li>
-                    <li>
-                      <a href="">
-                        <span className="far fa-user-circle" /> Author
-                      </a>
-                    </li>
-                    <li>
-                      <a href="">
-                        <span className="fa fa-list" /> Sports
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-                <span className="blog_heading">
-                  <a href="blog-single.html">
-                    basic rules of running web agency business
-                  </a>
-                </span>
-                <div className="text">
-                  Lorem ipsum is simply free text used by copytyping refreshing.
-                </div>
-                <div className="link-box">
-                  <a className="theme-btn" href="blog-single.html">
-                    <span className="flaticon-next-1" />
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          {/*News Block*/}
-          <div
-            className="news-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp"
-            data-wow-delay="0ms"
-            data-wow-duration="1500ms"
-          >
-            <div className="inner-box">
-              <div className="image-box">
-                <a href="blog-single.html">
-                  <img src="images/resource/news-1.jpg" alt="" />
-                </a>
-              </div>
-              <div className="lower-box">
-                <div className="post-meta">
-                  <ul className="clearfix text-dark">
-                    <li>
-                      <a href="">
-                        <span className="far fa-clock" /> 20 Mar
-                      </a>
-                    </li>
-                    <li>
-                      <a href="">
-                        <span className="far fa-user-circle" /> Author
-                      </a>
-                    </li>
-                    <li>
-                      <a href="">
-                        <span className="fa fa-list" /> Sports
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-                <span className="blog_heading">
-                  <a href="blog-single.html">
-                    basic rules of running web agency business
-                  </a>
-                </span>
-                <div className="text">
-                  Lorem ipsum is simply free text used by copytyping refreshing.
-                </div>
-                <div className="link-box">
-                  <a className="theme-btn" href="blog-single.html">
-                    <span className="flaticon-next-1" />
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          {/*News Block*/}
-          <div
-            className="news-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp"
-            data-wow-delay="0ms"
-            data-wow-duration="1500ms"
-          >
-            <div className="inner-box">
-              <div className="image-box">
-                <a href="blog-single.html">
-                  <img src="images/resource/news-1.jpg" alt="" />
-                </a>
-              </div>
-              <div className="lower-box">
-                <div className="post-meta">
-                  <ul className="clearfix text-dark">
-                    <li>
-                      <a href="">
-                        <span className="far fa-clock" /> 20 Mar
-                      </a>
-                    </li>
-                    <li>
-                      <a href="">
-                        <span className="far fa-user-circle" /> Author
-                      </a>
-                    </li>
-                    <li>
-                      <a href="">
-                        <span className="fa fa-list" /> Sports
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-                <span className="blog_heading">
-                  <a href="blog-single.html">
-                    basic rules of running web agency business
-                  </a>
-                </span>
-                <div className="text">
-                  Lorem ipsum is simply free text used by copytyping refreshing.
-                </div>
-                <div className="link-box">
-                  <a className="theme-btn" href="blog-single.html">
-                    <span className="flaticon-next-1" />
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          {/*News Block*/}
-          <div
-            className="news-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp"
-            data-wow-delay="0ms"
-            data-wow-duration="1500ms"
-          >
-            <div className="inner-box">
-              <div className="image-box">
-                <a href="blog-single.html">
-                  <img src="images/resource/news-1.jpg" alt="" />
-                </a>
-              </div>
-              <div className="lower-box">
-                <div className="post-meta">
-                  <ul className="clearfix text-dark">
-                    <li>
-                      <a href="">
-                        <span className="far fa-clock" /> 20 Mar
-                      </a>
-                    </li>
-                    <li>
-                      <a href="">
-                        <span className="far fa-user-circle" /> Author
-                      </a>
-                    </li>
-                    <li>
-                      <a href="">
-                        <span className="fa fa-list" /> Sports
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-                <span className="blog_heading">
-                  <a href="blog-single.html">
-                    basic rules of running web agency business
-                  </a>
-                </span>
-                <div className="text">
-                  Lorem ipsum is simply free text used by copytyping refreshing.
-                </div>
-                <div className="link-box">
-                  <a className="theme-btn" href="blog-single.html">
-                    <span className="flaticon-next-1" />
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          {/*News Block*/}
-          <div
-            className="news-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp"
-            data-wow-delay="0ms"
-            data-wow-duration="1500ms"
-          >
-            <div className="inner-box">
-              <div className="image-box">
-                <a href="blog-single.html">
-                  <img src="images/resource/news-1.jpg" alt="" />
-                </a>
-              </div>
-              <div className="lower-box">
-                <div className="post-meta">
-                  <ul className="clearfix text-dark">
-                    <li>
-                      <a href="">
-                        <span className="far fa-clock" /> 20 Mar
-                      </a>
-                    </li>
-                    <li>
-                      <a href="">
-                        <span className="far fa-user-circle" /> Author
-                      </a>
-                    </li>
-                    <li>
-                      <a href="">
-                        <span className="fa fa-list" /> Sports
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-                <span className="blog_heading">
-                  <a href="blog-single.html">
-                    basic rules of running web agency business
-                  </a>
-                </span>
-                <div className="text">
-                  Lorem ipsum is simply free text used by copytyping refreshing.
-                </div>
-                <div className="link-box">
-                  <a className="theme-btn" href="blog-single.html">
-                    <span className="flaticon-next-1" />
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
+            )
+         })}
+      
         </div>
         {/* <div class="more-box">
               <a class="theme-btn btn-style-one" href="blog.html">

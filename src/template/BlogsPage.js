@@ -15,10 +15,19 @@ import "../css/style.css"
 import "../css/custom-animate.css"
 import "../css/jquery.fancybox.min.css"
 import "../css/colors/color-default.css"
+import blogCard from "../images/resource/news-1.jpg"
 
 
+function BlogsPage(props) {
+    // let {pageContext}=data
+    console.log("props>",props.pageContext)
+    let data=props.pageContext.data.post.node;
+    console.log("data",data)
+    let content=data?.content?.replace(/<\/?[^>]+(>|$)/g, '');
+    
+    
+  console.log("data>f>",data,"pagecontext")
 
-function HomePage() {
   return (
   <>
     <div className="page-wrapper">
@@ -267,14 +276,14 @@ function HomePage() {
     <section className="page-banner">
       <div
         className="image-layer"
-        style={{ backgroundImage: "url(images/background/image-7.jpg)" }}
+        style={{backgroundImage: "url(../images/background/image-7.jpg)" }}
       />
       <div className="shape-1" />
       <div className="shape-2" />
       <div className="banner-inner">
         <div className="auto-container">
           <div className="inner-container clearfix">
-            <h1>Blog Posts</h1>
+            <h1>Blog Posts !</h1>
             <div className="page-nav">
               <ul className="bread-crumb clearfix">
                 <li>
@@ -299,66 +308,41 @@ function HomePage() {
                 <div className="inner-box">
                   <div className="image-box">
                     <a href="blog-single.html">
-                      <img src="images/resource/news-7.jpg" alt="" />
+                      <img src={data.featuredImage.node?.sourceUrl} alt={data.featuredImage.node.altText} />
                     </a>
                   </div>
                   <div className="lower-box">
                     <div className="post-meta">
                       <ul className="clearfix">
                         <li>
-                          <span className="far fa-clock" /> 20 Mar
+                          <span className="far fa-clock" /> {data.date}
                         </li>
                         <li>
-                          <span className="far fa-user-circle" /> Author
+                          <span className="far fa-user-circle" /> {data.author.node.name}
                         </li>
                         <li>
-                          <span className="fa fa-list" /> Sports
+                          <span className="fa fa-list" /> {data.categories.nodes[0].name}
                         </li>
                       </ul>
                     </div>
-                    <h4>basic rules of running web agency business</h4>
+                    <h4>{data.title}</h4>
                     <div className="text">
-                      <p>
-                        There are many variations of passages of Lorem Ipsum
-                        available, but the majority have suffered alteration in
-                        some form, by injected humour, or randomised words which
-                        don't look even slightly believable. If you are going to
-                        use a passage of Lorem Ipsum, you need to be sure there
-                        isn't anything embarrassing hidden in the middle of text.
-                        All the Lorem Ipsum generators on the Internet tend to
-                        repeat predefined chunks as necessary, making this the
-                        first true generator on the Internet. It uses a dictionary
-                        of over 200 Latin words, combined with a handful of model
-                        sentence structures, to generate Lorem Ipsum which looks
-                        reasonable. The generated Lorem Ipsum is therefore always
-                        free from repetition, injected humour, or
-                        non-characteristic words etc.
-                      </p>
-                      <p>
-                        It is a long established fact that a reader will be
-                        distracted by the readable content of a page when looking
-                        at its layout. The point of using Lorem Ipsum is that it
-                        has a more-or-less normal distribution of letters, as
-                        opposed to using 'Content here, content here', making it
-                        look like readable English. Many desktop publishing
-                        packages and web page editors now use Lorem Ipsum as their
-                        default model text, and a search for 'lorem ipsum' will
-                        uncover many web sites still in their infancy. Various
-                        versions have evolved over the years, sometimes by
-                        accident, sometimes on purpose injected humour and the
-                        like.
-                      </p>
+                     <p>{content}</p>
                     </div>
                   </div>
                 </div>
                 <div className="info-row clearfix">
                   <div className="tags-info">
-                    <strong>Tags:</strong> <a href="#">Business</a>,{" "}
-                    <a href="#">Agency</a>, <a href="#">Technology</a>
+                    <strong>Tags:</strong> 
+                    {data.tags.nodes.map(val=> <a href="#">{val.name} , </a>)}
+                    {/* <a href="#">Business</a>,{" "}
+                    <a href="#">Agency</a>, <a href="#">Technology</a> */}
                   </div>
                   <div className="cat-info">
-                    <strong>Category:</strong> <a href="#">Business</a>,{" "}
-                    <a href="#">Agency</a>
+                    <strong>Category:</strong> 
+                    {data.categories.nodes.map(val=> <a href="#">{val.name}</a>)}
+                    {/* <a href="#">Business</a>,{" "}
+                    <a href="#">Agency</a> */}
                   </div>
                 </div>
               </div>
@@ -391,7 +375,7 @@ function HomePage() {
                   <div className="comment">
                     <div className="author-thumb">
                       <figure className="thumb">
-                        <img src="images/resource/author-7.jpg" alt="" />
+                        <img src={blogCard} alt="" />
                       </figure>
                     </div>
                     <div className="info">
@@ -415,7 +399,7 @@ function HomePage() {
                   <div className="comment">
                     <div className="author-thumb">
                       <figure className="thumb">
-                        <img src="images/resource/author-8.jpg" alt="" />
+                        <img src={blogCard} alt="" />
                       </figure>
                     </div>
                     <div className="info">
@@ -524,7 +508,7 @@ function HomePage() {
                   </div>
                   <div className="post">
                     <figure className="post-thumb">
-                      <img src="images/resource/news-thumb-1.jpg" alt="" />
+                      <img src={blogCard} alt="" />
                     </figure>
                     <h5 className="text">
                       <a href="#">EXPERIENCES THAT CONNECT WITH PEOPLE</a>
@@ -554,7 +538,8 @@ function HomePage() {
                     <h4>Categories</h4>
                   </div>
                   <ul>
-                    <li>
+                    {data?.categories.nodes.map(val=>   <a href="blog.html">{val.name}</a>)}
+                    {/* <li>
                       <a href="blog.html">Business</a>
                     </li>
                     <li className="active">
@@ -571,7 +556,7 @@ function HomePage() {
                     </li>
                     <li>
                       <a href="blog.html">Video Backgrounds</a>
-                    </li>
+                    </li> */}
                   </ul>
                 </div>
               </div>
@@ -581,10 +566,11 @@ function HomePage() {
                     <h4>Tags</h4>
                   </div>
                   <div className="tags-list clearfix">
-                    <a href="#">Business</a>, <a href="#">Agency</a>,{" "}
+                  {data?.tags.nodes.map(val=> <a href="blog.html">{val.name} , </a>)}
+                    {/* <a href="#">Business</a>, <a href="#">Agency</a>,{" "}
                     <a href="#">Technology</a>,<a href="#">Parallax</a>,{" "}
                     <a href="#">Innovative</a>, <a href="#">Professional</a>,
-                    <a href="#">Experience</a>
+                    <a href="#">Experience</a> */}
                   </div>
                 </div>
               </div>
@@ -658,7 +644,55 @@ function HomePage() {
             <div className="inner-box">
               <div className="image-box">
                 <a href="blog-single.html">
-                  <img src="images/resource/news-1.jpg" alt="" />
+                  <img src={blogCard} alt="" />
+                </a>
+              </div>
+              <div className="lower-box">
+                <div className="post-meta">
+                  <ul className="clearfix text-dark">
+                    <li>
+                      <a href="">
+                        <span className="far fa-clock" /> 290 Mar
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <span className="far fa-user-circle" /> Author
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <span className="fa fa-list" /> Sports
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <span className="blog_heading">
+                  <a href="blog-single.html">
+                    basic rules of running web agency business
+                  </a>
+                </span>
+                <div className="text">
+                  Lorem ipsum is simply free text used by copytyping refreshing.
+                </div>
+                <div className="link-box">
+                  <a className="theme-btn" href="blog-single.html">
+                    <span className="flaticon-next-1" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          {/*News Block*/}
+          <div
+            className="news-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp"
+            data-wow-delay="0ms"
+            data-wow-duration="1500ms"
+          >
+            <div className="inner-box">
+              <div className="image-box">
+                <a href="blog-single.html">
+                  <img src={blogCard} alt="" />
                 </a>
               </div>
               <div className="lower-box">
@@ -706,55 +740,7 @@ function HomePage() {
             <div className="inner-box">
               <div className="image-box">
                 <a href="blog-single.html">
-                  <img src="images/resource/news-1.jpg" alt="" />
-                </a>
-              </div>
-              <div className="lower-box">
-                <div className="post-meta">
-                  <ul className="clearfix text-dark">
-                    <li>
-                      <a href="">
-                        <span className="far fa-clock" /> 20 Mar
-                      </a>
-                    </li>
-                    <li>
-                      <a href="">
-                        <span className="far fa-user-circle" /> Author
-                      </a>
-                    </li>
-                    <li>
-                      <a href="">
-                        <span className="fa fa-list" /> Sports
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-                <span className="blog_heading">
-                  <a href="blog-single.html">
-                    basic rules of running web agency business
-                  </a>
-                </span>
-                <div className="text">
-                  Lorem ipsum is simply free text used by copytyping refreshing.
-                </div>
-                <div className="link-box">
-                  <a className="theme-btn" href="blog-single.html">
-                    <span className="flaticon-next-1" />
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          {/*News Block*/}
-          <div
-            className="news-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp"
-            data-wow-delay="0ms"
-            data-wow-duration="1500ms"
-          >
-            <div className="inner-box">
-              <div className="image-box">
-                <a href="blog-single.html">
-                  <img src="images/resource/news-1.jpg" alt="" />
+                  <img src={blogCard} alt="" />
                 </a>
               </div>
               <div className="lower-box">
@@ -951,4 +937,4 @@ function HomePage() {
   )
 }
 
-export default HomePage
+export default BlogsPage

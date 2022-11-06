@@ -1,4 +1,5 @@
 import React from 'react'
+import '../css/style2.css'
 import "../css/bootstrap.min.css"
 import "../css/fontawesome-all.css"
 import "../css/owl.css"
@@ -13,6 +14,9 @@ import "../css/style.css"
 import "../css/custom-animate.css"
 import "../css/jquery.fancybox.min.css"
 import "../css/colors/color-default.css"
+import bgImg from '../images/background/image-7.jpg'
+import galleryImg from '../images/gallery/1.jpg'
+
 function Portfolio() {
   return (
 <>
@@ -266,7 +270,7 @@ function Portfolio() {
     <section className="page-banner">
       <div
         className="image-layer"
-        style={{ backgroundImage: "url(images/background/image-7.jpg)" }}
+        style={{ backgroundImage: `url(${bgImg})` }}
       />
       <div className="shape-1" />
       <div className="shape-2" />
@@ -330,13 +334,13 @@ function Portfolio() {
           </div>
           <div className="filter-list row">
             {/* Gallery Item */}
-            <div className="gallery-item mix all web-design col-lg-4 col-md-6 col-sm-12">
+            <div className="gallery-item all web-design col-lg-4 col-md-6 col-sm-12">
               <div className="inner-box">
                 <figure className="image">
-                  <img src="images/gallery/1.jpg" alt="" />
+                  <img src={galleryImg} alt="" />
                 </figure>
                 <a
-                  href="images/gallery/1.jpg"
+                  href={galleryImg}
                   className="lightbox-image overlay-box"
                   data-fancybox="gallery"
                 />
@@ -353,13 +357,13 @@ function Portfolio() {
               </div>
             </div>
             {/* Gallery Item */}
-            <div className="gallery-item mix all photography web-design col-lg-4 col-md-6 col-sm-12">
+            <div className="gallery-item all photography web-design col-lg-4 col-md-6 col-sm-12">
               <div className="inner-box">
                 <figure className="image">
-                  <img src="images/gallery/2.jpg" alt="" />
+                  <img src={galleryImg} alt="" />
                 </figure>
                 <a
-                  href="images/gallery/2.jpg"
+                  href={galleryImg}
                   className="lightbox-image overlay-box"
                   data-fancybox="gallery"
                 />
@@ -376,13 +380,13 @@ function Portfolio() {
               </div>
             </div>
             {/* Gallery Item */}
-            <div className="gallery-item mix all branding web-design col-lg-4 col-md-6 col-sm-12">
+            <div className="gallery-item all branding web-design col-lg-4 col-md-6 col-sm-12">
               <div className="inner-box">
                 <figure className="image">
-                  <img src="images/gallery/3.jpg" alt="" />
+                  <img src={galleryImg} alt="" />
                 </figure>
                 <a
-                  href="images/gallery/3.jpg"
+                  href={galleryImg}
                   className="lightbox-image overlay-box"
                   data-fancybox="gallery"
                 />
@@ -399,13 +403,13 @@ function Portfolio() {
               </div>
             </div>
             {/* Gallery Item */}
-            <div className="gallery-item mix all branding illustration col-lg-4 col-md-6 col-sm-12">
+            <div className="gallery-item all branding illustration col-lg-4 col-md-6 col-sm-12">
               <div className="inner-box">
                 <figure className="image">
-                  <img src="images/gallery/4.jpg" alt="" />
+                  <img src={galleryImg} alt="" />
                 </figure>
                 <a
-                  href="images/gallery/4.jpg"
+                  href={galleryImg}
                   className="lightbox-image overlay-box"
                   data-fancybox="gallery"
                 />
@@ -422,13 +426,13 @@ function Portfolio() {
               </div>
             </div>
             {/* Gallery Item */}
-            <div className="gallery-item mix all branding illustration photography web-design col-lg-4 col-md-6 col-sm-12">
+            <div className="gallery-item  all branding illustration photography web-design col-lg-4 col-md-6 col-sm-12">
               <div className="inner-box">
                 <figure className="image">
-                  <img src="images/gallery/5.jpg" alt="" />
+                  <img src={galleryImg} alt="" />
                 </figure>
                 <a
-                  href="images/gallery/5.jpg"
+                  href={galleryImg}
                   className="lightbox-image overlay-box"
                   data-fancybox="gallery"
                 />
@@ -445,13 +449,13 @@ function Portfolio() {
               </div>
             </div>
             {/* Gallery Item */}
-            <div className="gallery-item mix all illustration photography col-lg-4 col-md-6 col-sm-12">
+            <div className="gallery-item all illustration photography col-lg-4 col-md-6 col-sm-12">
               <div className="inner-box">
                 <figure className="image">
-                  <img src="images/gallery/6.jpg" alt="" />
+                  <img src={galleryImg} alt="" />
                 </figure>
                 <a
-                  href="images/gallery/6.jpg"
+                  href={galleryImg}
                   className="lightbox-image overlay-box"
                   data-fancybox="gallery"
                 />
@@ -478,158 +482,7 @@ function Portfolio() {
       </div>
     </section>
     {/* Main Footer */}
-    <footer className="main-footer normal-padding">
-      <div className="auto-container">
-        {/*Widgets Section*/}
-        <div className="widgets-section">
-          <div className="row clearfix">
-            {/*Column*/}
-            <div className="column col-xl-3 col-lg-6 col-md-6 col-sm-12">
-              <div className="footer-widget logo-widget">
-                <div className="widget-content">
-                  <div className="logo">
-                    <a href="index.html">
-                      <img id="fLogo" src="images/footer-logo.png" alt="" />
-                    </a>
-                  </div>
-                  <div className="text">
-                    Welcome to our web design agency. Lorem ipsum simply free
-                    text dolor sited amet cons cing elit.
-                  </div>
-                  <ul className="social-links clearfix">
-                    <li>
-                      <a href="#">
-                        <span className="fab fa-facebook-square" />
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <span className="fab fa-twitter" />
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <span className="fab fa-instagram" />
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <span className="fab fa-pinterest-p" />
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            {/*Column*/}
-            <div className="column col-xl-3 col-lg-6 col-md-6 col-sm-12">
-              <div className="footer-widget links-widget">
-                <div className="widget-content">
-                  <span className="footer_heading">Explore</span>
-                  <div className="row clearfix">
-                    <div className="col-md-6 col-sm-12">
-                      <ul>
-                        <li>
-                          <a href="#">About</a>
-                        </li>
-                        <li>
-                          <a href="#">Meet Our Team</a>
-                        </li>
-                        <li>
-                          <a href="#">Our Portfolio</a>
-                        </li>
-                        <li>
-                          <a href="#">Latest News</a>
-                        </li>
-                        <li>
-                          <a href="#">Contact</a>
-                        </li>
-                      </ul>
-                    </div>
-                    <div className="col-md-6 col-sm-12">
-                      <ul>
-                        <li>
-                          <a href="#">Support</a>
-                        </li>
-                        <li>
-                          <a href="#">Privacy Policy</a>
-                        </li>
-                        <li>
-                          <a href="#">Terms of Use</a>
-                        </li>
-                        <li>
-                          <a href="#">Help</a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            {/*Column*/}
-            <div className="column col-xl-3 col-lg-6 col-md-6 col-sm-12">
-              <div className="footer-widget info-widget">
-                <div className="widget-content">
-                  <span className="footer_heading">Contact</span>
-                  <ul className="contact-info">
-                    <li className="address">
-                      <span className="icon flaticon-pin-1" /> 66 Broklyn
-                      Street, New York <br />
-                      United States of America
-                    </li>
-                    <li>
-                      <span className="icon flaticon-call" />
-                      <a href="tel:666888000">666 888 000</a>
-                    </li>
-                    <li>
-                      <span className="icon flaticon-email-2" />
-                      <a href="mailto:needhelp@linoor.com">
-                        needhelp@linoor.com
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            {/*Column*/}
-            <div className="column col-xl-3 col-lg-6 col-md-6 col-sm-12">
-              <div className="footer-widget info-widget">
-                <div className="widget-content">
-                  <span className="footer_heading">Contact</span>
-                  <ul className="contact-info">
-                    <li className="address">
-                      <span className="icon flaticon-pin-1" /> 66 Broklyn
-                      Street, New York <br />
-                      United States of America
-                    </li>
-                    <li>
-                      <span className="icon flaticon-call" />
-                      <a href="tel:666888000">666 888 000</a>
-                    </li>
-                    <li>
-                      <span className="icon flaticon-email-2" />
-                      <a href="mailto:needhelp@linoor.com">
-                        needhelp@linoor.com
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      {/* Footer Bottom */}
-      <div className="footer-bottom">
-        <div className="auto-container">
-          <div className="inner clearfix">
-            <div className="copyright">
-              Copyright © <span id="auto_year" /> by Layerdrops.com
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
+    
   </div>
   {/*End pagewrapper*/}
   <a href="#" data-target="html" className="scroll-to-target scroll-to-top">

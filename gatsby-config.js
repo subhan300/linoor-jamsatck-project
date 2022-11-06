@@ -17,15 +17,15 @@ module.exports = {
   }
 ,
 
-{
-  resolve: "gatsby-source-wordpress",
-  options: {
-    // I have created a dummy site for us to use with the plugins we discussed
-    url: "http://127.0.0.1:81/wordpress/graphql",
+// {
+//   resolve: "gatsby-source-wordpress",
+//   options: {
+//     // I have created a dummy site for us to use with the plugins we discussed
+//     url: "http://127.0.0.1:81/wordpress/graphql",
    
 
-  },
-},
+//   },
+// },
 ]
 };
 

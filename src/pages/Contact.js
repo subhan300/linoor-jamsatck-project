@@ -1,4 +1,5 @@
 import React from 'react'
+import '../css/style2.css'
 import "../css/bootstrap.min.css"
 import "../css/fontawesome-all.css"
 import "../css/owl.css"
@@ -13,6 +14,9 @@ import "../css/style.css"
 import "../css/custom-animate.css"
 import "../css/jquery.fancybox.min.css"
 import "../css/colors/color-default.css"
+import bgImg from '../images/background/image-7.jpg'
+import news1 from '../images/resource/news-1.jpg'
+
 function Contact() {
   return (
     <>
@@ -266,7 +270,7 @@ function Contact() {
       <section className="page-banner">
         <div
           className="image-layer"
-          style={{ backgroundImage: "url(images/background/image-7.jpg)" }}
+          style={{ backgroundImage: `url(${bgImg})` }}
         />
         <div className="shape-1" />
         <div className="shape-2" />
@@ -483,7 +487,7 @@ function Contact() {
               <div className="inner-box">
                 <div className="image-box">
                   <a href="blog-single.html">
-                    <img src="images/resource/news-1.jpg" alt="" />
+                    <img src={news1} alt="" />
                   </a>
                 </div>
                 <div className="lower-box">
@@ -531,7 +535,7 @@ function Contact() {
               <div className="inner-box">
                 <div className="image-box">
                   <a href="blog-single.html">
-                    <img src="images/resource/news-1.jpg" alt="" />
+                    <img src={news1} alt="" />
                   </a>
                 </div>
                 <div className="lower-box">
@@ -579,7 +583,7 @@ function Contact() {
               <div className="inner-box">
                 <div className="image-box">
                   <a href="blog-single.html">
-                    <img src="images/resource/news-1.jpg" alt="" />
+                    <img src={news1} alt="" />
                   </a>
                 </div>
                 <div className="lower-box">

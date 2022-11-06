@@ -1,4 +1,5 @@
 import React from 'react'
+import '../css/style2.css'
 import "../css/bootstrap.min.css"
 import "../css/fontawesome-all.css"
 import "../css/owl.css"
@@ -13,6 +14,12 @@ import "../css/style.css"
 import "../css/custom-animate.css"
 import "../css/jquery.fancybox.min.css"
 import "../css/colors/color-default.css"
+import bgImg from '../images/background/image-7.jpg'
+import img02 from '../images/img02.png'
+import img03 from '../images/img03.png'
+import news1 from '../images/resource/news-1.jpg'
+
+
 function Covid() {
   return (
     <>
@@ -266,7 +273,7 @@ function Covid() {
       <section className="page-banner">
         <div
           className="image-layer"
-          style={{ backgroundImage: "url(images/background/image-7.jpg)" }}
+          style={{ backgroundImage: `url(${bgImg})` }}
         />
         <div className="shape-1" />
         <div className="shape-2" />
@@ -299,14 +306,14 @@ function Covid() {
                   data-wow-delay="0ms"
                   data-wow-duration="1500ms"
                 >
-                  <img src="images/img03.png" alt="" />
+                  <img src={img03} alt="" />
                 </div>
                 <div
                   className="image-block wow fadeInUp"
                   data-wow-delay="300ms"
                   data-wow-duration="1500ms"
                 >
-                  <img src="images/img02.png" alt="" />
+                  <img src={img02} alt="" />
                 </div>
               </div>
             </div>
@@ -401,7 +408,7 @@ function Covid() {
               <div className="inner-box">
                 <div className="image-box">
                   <a href="blog-single.html">
-                    <img src="images/resource/news-1.jpg" alt="" />
+                    <img src={news1} alt="" />
                   </a>
                 </div>
                 <div className="lower-box">
@@ -449,7 +456,7 @@ function Covid() {
               <div className="inner-box">
                 <div className="image-box">
                   <a href="blog-single.html">
-                    <img src="images/resource/news-1.jpg" alt="" />
+                    <img src={news1} alt="" />
                   </a>
                 </div>
                 <div className="lower-box">
@@ -497,7 +504,7 @@ function Covid() {
               <div className="inner-box">
                 <div className="image-box">
                   <a href="blog-single.html">
-                    <img src="images/resource/news-1.jpg" alt="" />
+                    <img src={news1} alt="" />
                   </a>
                 </div>
                 <div className="lower-box">

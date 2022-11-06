@@ -1,4 +1,5 @@
 import React from 'react'
+import '../css/style2.css'
 import "../css/bootstrap.min.css"
 import "../css/fontawesome-all.css"
 import "../css/owl.css"
@@ -13,6 +14,17 @@ import "../css/style.css"
 import "../css/custom-animate.css"
 import "../css/jquery.fancybox.min.css"
 import "../css/colors/color-default.css"
+import bgImg from '../images/background/image-7.jpg'
+import portfolioD3 from '../images/update-26-02-2021/resources/portfolio-d-3.jpg' 
+import port1 from '../images/update-26-02-2021/resources/portfolio-d-3-1.jpg'
+import port2 from '../images/update-26-02-2021/resources/portfolio-d-3-2.jpg'
+import port3 from '../images/update-26-02-2021/resources/portfolio-d-3-3.jpg'
+import port4 from '../images/update-26-02-2021/resources/portfolio-d-video-1.jpg'
+import work1 from '../images/gallery/4.jpg'
+import work2 from '../images/gallery/5.jpg'
+import work3 from '../images/gallery/6.jpg'
+import work4 from '../images/gallery/7.jpg'
+
 function PortfolioSingle() {
   return (
 <>
@@ -265,7 +277,7 @@ function PortfolioSingle() {
     <section className="page-banner">
       <div
         className="image-layer"
-        style={{ backgroundImage: "url(images/background/image-7.jpg)" }}
+        style={{ backgroundImage: `url(${bgImg})` }}
       />
       <div className="shape-1" />
       <div className="shape-2" />
@@ -292,7 +304,7 @@ function PortfolioSingle() {
         <div className="clearfix">
           <div className="portfolio-details-header__image">
             <img
-              src="images/update-26-02-2021/resources/portfolio-d-3.jpg"
+              src={portfolioD3}
               alt=""
             />
           </div>
@@ -365,7 +377,7 @@ function PortfolioSingle() {
           <div className="col-md-6">
             <div className="portfolio-details-info__image">
               <img
-                src="images/update-26-02-2021/resources/portfolio-d-3-1.jpg"
+                src={port1}
                 alt=""
               />
             </div>
@@ -397,7 +409,7 @@ function PortfolioSingle() {
           <div className="col-md-6">
             <div className="portfolio-details-info__image">
               <img
-                src="images/update-26-02-2021/resources/portfolio-d-3-2.jpg"
+                src={port2}
                 alt=""
               />
             </div>
@@ -429,7 +441,7 @@ function PortfolioSingle() {
           <div className="col-md-6">
             <div className="portfolio-details-info__image">
               <img
-                src="images/update-26-02-2021/resources/portfolio-d-3-3.jpg"
+                src={port3}
                 alt=""
               />
             </div>
@@ -465,7 +477,7 @@ function PortfolioSingle() {
       <div className="auto-container">
         <div className="portfolio-details-video__thumbnail">
           <img
-            src="images/update-26-02-2021/resources/portfolio-d-video-1.jpg"
+            src={port4}
             alt=""
           />
           <div className="vid-link">
@@ -545,7 +557,7 @@ function PortfolioSingle() {
           <div className="gallery-item col-lg-4 col-md-6 col-sm-12">
             <div className="inner-box">
               <figure className="image">
-                <img src="images/gallery/4.jpg" alt="" />
+                <img src={work1} alt="" />
               </figure>
               <a
                 href="images/gallery/4.jpg"
@@ -568,7 +580,7 @@ function PortfolioSingle() {
           <div className="gallery-item col-lg-4 col-md-6 col-sm-12">
             <div className="inner-box">
               <figure className="image">
-                <img src="images/gallery/5.jpg" alt="" />
+                <img src={work2} alt="" />
               </figure>
               <a
                 href="images/gallery/5.jpg"
@@ -591,7 +603,7 @@ function PortfolioSingle() {
           <div className="gallery-item col-lg-4 col-md-6 col-sm-12">
             <div className="inner-box">
               <figure className="image">
-                <img src="images/gallery/6.jpg" alt="" />
+                <img src={work3} alt="" />
               </figure>
               <a
                 href="images/gallery/6.jpg"
@@ -629,7 +641,7 @@ function PortfolioSingle() {
             <div className="inner-box">
               <div className="image-box">
                 <a href="blog-single.html">
-                  <img src="images/resource/news-1.jpg" alt="" />
+                  <img src={work4} alt="" />
                 </a>
               </div>
               <div className="lower-box">
@@ -677,7 +689,7 @@ function PortfolioSingle() {
             <div className="inner-box">
               <div className="image-box">
                 <a href="blog-single.html">
-                  <img src="images/resource/news-1.jpg" alt="" />
+                  <img src={work4} alt="" />
                 </a>
               </div>
               <div className="lower-box">
@@ -725,7 +737,7 @@ function PortfolioSingle() {
             <div className="inner-box">
               <div className="image-box">
                 <a href="blog-single.html">
-                  <img src="images/resource/news-1.jpg" alt="" />
+                  <img src={work4} alt="" />
                 </a>
               </div>
               <div className="lower-box">

@@ -1,4 +1,5 @@
 import React from 'react'
+import '../css/style2.css'
 import "../css/bootstrap.min.css"
 import "../css/fontawesome-all.css"
 import "../css/owl.css"
